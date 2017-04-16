@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20170329201748) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "project_todos", force: :cascade do |t|
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
