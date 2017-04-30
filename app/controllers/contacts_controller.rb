@@ -28,7 +28,7 @@ def create
     # If Contact object doesn't save,
     # store erros in flash hash,
     # and redirect to new action
-     flash[:error] = @contact.errors.full_messages.join(", ")
+     flash[:danger] = @contact.errors.full_messages.join(", ")
      redirect_to new_contact_path
   end
 end
